@@ -70,3 +70,6 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 991px)");		// measuring media width
 myFunction(x); 		// call function first
 x.addListener(myFunction);		// call function on state change also
+
+
+/* ============================================================================== */
