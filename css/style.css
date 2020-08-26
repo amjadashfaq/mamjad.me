@@ -209,6 +209,7 @@ nav.fill ul li a:hover:after {
 	}
 	.mybtn{
 		text-align: center;
+		outline: 0px solid transparent;
 	}
 }
 
@@ -247,6 +248,9 @@ nav.fill ul li a:hover:after {
 
 .myheader .row{
 	margin: 0px;
+}
+.myheader button{
+  	outline: 0px transparent solid;
 }
 
 .button {
@@ -414,7 +418,7 @@ nav.fill ul li a:hover:after {
 
 /* =================================== About section ============================== */
 
-.about>h1{
+.heading{
 	margin: 100px 0px 0px 10%;
 	font:3.8em Arial black, serif;
 	color: #0019a3;
@@ -472,7 +476,7 @@ nav.fill ul li a:hover:after {
 }
 
 @media (min-width: 1192px) and (max-width: 1350px){
-.about>h1{
+.heading{
 	margin: 100px 0px 0px 10%;
 	font:3.2em Arial black, serif;
 	color: #0019a3;
@@ -494,7 +498,7 @@ nav.fill ul li a:hover:after {
 }
 
 @media (min-width: 992px) and (max-width: 1191px) {
-.about>h1{
+.heading{
 	margin: 100px 0px 0px 10%;
 	font:2.7em Arial black, serif;
 	color: #0019a3;
@@ -516,7 +520,7 @@ nav.fill ul li a:hover:after {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-.about>h1{
+.heading{
 	margin: 60px 0px 0px 10%;
 	font:2em Arial black, serif;
 	color: #0019a3;
@@ -542,7 +546,7 @@ nav.fill ul li a:hover:after {
 }
 }
 @media (min-width: 448px) and (max-width: 767px) {
-.about>h1{
+.heading{
 	margin: 60px 0px 0px 10%;
 	font:1.8em Arial black, serif;
 	color: #0019a3;
@@ -570,7 +574,7 @@ nav.fill ul li a:hover:after {
 }
 
 @media (max-width: 447px) {
-.about>h1{
+.heading{
 	margin: 40px 0px 0px 10%;
 	font:2em Arial black, serif;
 	color: #0019a3;
@@ -604,7 +608,7 @@ nav.fill ul li a:hover:after {
 
 #services{
 	background: #f0f8ff;
-	padding-top: 7%;
+	padding: 7%;
 }
 #tiles{
 	justify-content: center;
@@ -804,3 +808,220 @@ nav.fill ul li a:hover:after {
 
 
 /* =============================================== Services section ends ========================================= */ 
+
+
+/* =============================================================================================================== */
+
+/* =============================================================================================================== */
+
+/* =============================================== Portfolio section ========================================= */ 
+
+#portfolio{
+	padding-top: 0%;
+}
+.work-showcase{
+	margin: 10%;
+}
+.wrap-container{
+	padding: 5%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 0%;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 20em;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #8000bf/*#008CBA*/;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  transition: .5s ease;
+  opacity: .9;
+  border-bottom-right-radius: 100%; 
+}
+
+.container:hover .overlay {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  /*border-bottom-right-radius: 0%;*/ 
+}
+.container:hover .text{
+	opacity: 1;
+}
+
+.text {
+  color: white;
+  font: 2em Arial, sans-serif;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 40%;
+  transition-delay: 2s;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: 2s;
+}
+
+.text button{
+	color: #fff;
+	background: transparent;
+	border: 5px #fff solid;
+	border-radius: 50px;
+	font-size: 0.8em;
+	font-weight: bold;
+	width: 80%;
+	height: auto;
+	padding: 5px;
+	transition: 1s ease;
+	outline: 0px transparent solid;
+}
+
+
+
+.text button:hover{
+	color: #8000bf;
+	background: #fff;
+}
+.caption{
+	text-align: center;
+	margin-top: 5%;
+}
+
+.caption button{
+	outline: 0px solid transparent;
+}
+
+.cap-btn{
+	background: linear-gradient(-30deg, #8000bf, #0019a3);			/* ===================================================================== */
+	color: #fff;
+	border-radius: 50px;
+	padding: auto;
+	width: 40%;
+	height: 50px;
+	font-size: 20px;
+	font-family: SFMono-Regular, sans-serif;
+	font-weight: bold;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+	/* ============================================= Portfolio section responsive code ========================================= */
+
+@media (min-width: 1351px) and screen{
+
+}
+@media (min-width: 1192px) and (max-width: 1350px){
+	.image {
+	  height: 17em;
+	}
+	.text {
+	  font: 1.8em Arial, sans-serif;
+	}
+
+	.text button{
+		font-size: 0.7em;
+		width: 70%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1191px){
+	.image {
+	  height: 14em;
+	}
+	.text {
+	  font: 1.7em Arial, sans-serif;
+	}
+
+	.text button{
+		font-size: 0.7em;
+		width: 70%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.image {
+	  height: 17em;
+	}
+	.text {
+	  font: 2em Arial, sans-serif;
+	}
+
+	.text button{
+		font-size: 0.8em;
+		width: 80%;
+	}
+}
+
+@media (min-width: 451px) and (max-width: 767px){
+	.image {
+	  height: 20em;
+	}
+	.text {
+	  font: 2em Arial, sans-serif;
+	}
+
+	.text button{
+		font-size: 0.8em;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.image {
+	  height: 14em;
+	}
+	.text {
+	  font: 2em Arial, sans-serif;
+	}
+
+	.text button{
+		font-size: 0.8em;
+		width: 80%;
+	}
+}
+
+
+	/* ============================================= Portfolio section responsive code ends ========================================= */
+
+
+
+/* ============================================= Portfolio section ends ========================================= */ 
+
+.ontop img{
+	width: 100%;
+	height: auto;
+	border: 0px solid transparent;
+	padding-top: 0px;
+}
+
+.ontop{
+	margin-bottom: -5px;
+	padding: 0px;
+	overflow: visible;
+	background: yellow;
+}
+
+footer{
+
+	background: #8000bf;
+	width: 100%;
+	height: 30em;
+}
