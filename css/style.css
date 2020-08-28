@@ -2,6 +2,9 @@
 	box-sizing: border-box;
 	margin: 0px;
 }
+ul{
+	padding: 0px;
+}
 .row{
 	margin: 0px;
 	padding: 0px;
@@ -917,6 +920,13 @@ nav.fill ul li a:hover:after {
 	box-shadow: 5px 5px 10px #888888;
 }
 
+.more{
+	width: 100%;
+	margin-top: 10%;
+	color: #c8c8c8;
+	text-align:  center;
+}
+
 	/* ============================================= Portfolio section responsive code ========================================= */
 
 @media (min-width: 1351px) and screen{
@@ -999,21 +1009,326 @@ nav.fill ul li a:hover:after {
 
 /* ============================================= Portfolio section ends ========================================= */ 
 
+
+/* ============================================================================================================== */
+
+
+/* =============================================== Footer ================================================= */
+
 .ontop img{
 	width: 100%;
 	height: auto;
-	border: none;
-	white-space: 
-	padding-top: 0px;
-}
-
-.ontop{
-
 }
 
 footer{
-
 	background: #8000bf;
 	width: 100%;
 	height: 30em;
+	text-align: center;
+	justify-content: center;
+	padding-top: 4%;                         
 }
+footer h2{
+	color: #fff;
+	font: 2.5em Arial black,serif;
+}
+
+.message{
+	width: 15%;
+	padding-left: 20px; 
+	height: 14%;
+	margin-bottom: 2%;
+	border-radius: 50px;
+	border: 2px #fff solid;
+	background: transparent;
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+	transition: 1s ease;
+	overflow: hidden;
+}
+.message span{
+	position: relative;
+	left: 10%;
+	opacity: 0;
+	transition-delay: 1s;
+	transition: 1s ease;
+}
+.message span:after{
+		content: '\00bb';
+}
+
+.message:hover{
+	background: #fff;
+	color: #8000bf;	
+	padding-left: 0px;
+}
+.message:hover span{
+	content: '\00bb';
+	left: 5%;
+	opacity: 1;
+	color: #8000bf;
+}
+.social {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+  transform: translateY(-50%);
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 40px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.link.instagram {
+	background-color: tomato;
+	color: white;
+}
+
+.link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.link.linkedin {
+  background-color: #0e76a8;
+  color: white;
+}
+
+.hr{
+	width: 40%;
+	height: 2px;
+	margin-left: 30%;
+	text-align: center;
+	justify-content: center;
+	background-color: #fff; 
+}
+#footer button{
+	outline: 0px solid transparent;
+}
+footer p{
+	color: #fff;
+	margin-top: 1%;
+}
+
+
+		/* ============================================ Footer Responsive code ====================================== */
+
+@media (min-width: 1351px) and screen{
+
+}
+@media (min-width: 1192px) and (max-width: 1350px){
+	footer{
+		height: 25em;
+		padding-top: 4%;                         
+	}
+	footer h2{
+		font: 2.3em Arial black,serif;
+	}
+	.social .link {
+		width: 90px;
+		height: 90px;
+		font-size: 30px;
+	}
+	.message{
+		width: 16%;
+		padding-left: 15px; 
+		height: 14%;
+		font-size: 1.2em;
+	}
+	footer p{
+		margin-top: 1%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1191px){
+	footer{
+		height: 23em;
+		padding-top: 4%;                         
+	}
+	footer h2{
+		font: 2.2em Arial black,serif;
+	}
+	.social .link {
+		width: 80px;
+		height: 80px;
+		font-size: 25px;
+	}
+	.message{
+		width: 16%;
+		padding-left: 15px; 
+		height: 13%;
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	footer{
+		height: 21.5em;
+		padding-top: 4%;                         
+	}
+	footer h2{
+		font: 2em Arial black,serif;
+	}
+	.social .link {
+		width: 80px;
+		height: 80px;
+		font-size: 25px;
+	}	
+	.message{
+		width: 18%;
+		padding-left: 8px; 
+		height: 15%;
+		font-size: 0.9em;
+	}
+	.social-icons {
+		width: 100%;
+		text-align: center;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+	.social-icons .link {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		padding-top: 7px;
+		color: #D7D0BE;
+		margin-left: 15px;
+		margin-right: 15px;
+		font-size: 30px;
+	}
+	.social .link span {
+		text-align: center;
+	}
+	.hr{
+		margin: 2% 0% 0% 30%;
+	}
+}
+
+@media (min-width: 451px) and (max-width: 767px){
+	footer{
+		height: 20em;
+		padding-top: 4%;                         
+	}
+	footer h2{
+		font: 1.8em Arial black,serif;
+	}
+	.message{
+		margin-top: 2%;
+		width: 23%;
+		padding-left: 10px; 
+		height: 15%;
+		font-size: 0.8em;
+	}
+	.social-icons {
+		width: 100%;
+		text-align: center;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+	.social-icons .link {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		padding-top: 6px;
+		color: #D7D0BE;
+		margin-left: 15px;
+		margin-right: 15px;
+		font-size: 25px;
+	}
+	.social .link span {
+		text-align: center;
+	}
+	.hr{
+		margin: 2% 0% 2% 30%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	footer{
+		height: 17em;
+		padding-top: 4%;                         
+	}
+	footer h2{
+		color: #fff;
+		font: 1.6em Arial black,serif;
+	}	
+	.message{
+		margin-top: 2%;
+		margin-bottom: 2%;
+		width: 30%;
+		padding-left: 10px; 
+		height: 10%;
+		font-size: 0.7em;
+	}
+	.social-icons {
+		width: 100%;
+		text-align: center;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+	.social-icons .link {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		padding-top: 5px;
+		color: #D7D0BE;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 20px;
+	}
+	.social-icons .link span {
+		text-align: center;
+	}
+	.hr{
+		margin: 2% 0% 2% 30%;
+	}
+}
+
+
+
+/* ========================================================================================== */
+
