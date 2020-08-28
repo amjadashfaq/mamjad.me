@@ -944,6 +944,9 @@ nav.fill ul li a:hover:after {
 		font-size: 0.7em;
 		width: 70%;
 	}
+	.more h1{
+		font-size: 2em;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1191px){
@@ -957,6 +960,9 @@ nav.fill ul li a:hover:after {
 	.text button{
 		font-size: 0.7em;
 		width: 70%;
+	}
+	.more h1{
+		font-size: 1.7em;
 	}
 }
 
@@ -972,6 +978,9 @@ nav.fill ul li a:hover:after {
 		font-size: 0.8em;
 		width: 80%;
 	}
+	.more h1{
+		font-size: 1.5em;
+	}
 }
 
 @media (min-width: 451px) and (max-width: 767px){
@@ -986,6 +995,9 @@ nav.fill ul li a:hover:after {
 		font-size: 0.8em;
 		width: 80%;
 	}
+	.more h1{
+		font-size: 1.5em;
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -999,6 +1011,9 @@ nav.fill ul li a:hover:after {
 	.text button{
 		font-size: 0.8em;
 		width: 80%;
+	}
+	.more h1{
+		font-size: 1.4em;
 	}
 }
 
@@ -1287,7 +1302,7 @@ footer p{
 @media screen and (max-width: 450px) {
 	footer{
 		height: 17em;
-		padding-top: 4%;                         
+		padding-top: 7%;                         
 	}
 	footer h2{
 		color: #fff;
