@@ -1303,7 +1303,7 @@ footer p{
 
 @media screen and (max-width: 450px) {
 	footer{
-		height: 15em;
+		height: 13em;
 		padding-top: 7%;                         
 	}
 	footer h2{
