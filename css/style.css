@@ -1158,6 +1158,8 @@ footer h2{
 footer p{
 	color: #fff;
 	margin-top: 1%;
+	margin-bottom: 0;
+	padding-bottom: 5px;
 }
 
 
@@ -1259,7 +1261,7 @@ footer p{
 
 @media (min-width: 451px) and (max-width: 767px){
 	footer{
-		height: 20em;
+		height: 18em;
 		padding-top: 4%;                         
 	}
 	footer h2{
@@ -1301,7 +1303,7 @@ footer p{
 
 @media screen and (max-width: 450px) {
 	footer{
-		height: 17em;
+		height: 15em;
 		padding-top: 7%;                         
 	}
 	footer h2{
