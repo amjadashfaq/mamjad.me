@@ -108,12 +108,6 @@ span.onclick = function() {
 document.getElementById("reset").onclick= function () {
     document.getElementById("form").reset();  //reseting form input fields removes all the entered data from input fields
 }
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == contact) {
-    contact.style.display = "none";
-  }
-}
 
 
 /* =============================================== Contact box ends ======================================= */
@@ -147,10 +141,4 @@ spanP.onclick = function() {
 
 document.getElementById("reseter").onclick= function () {
     document.getElementById("form2").reset();  //reseting form input fields removes all the entered data from input fields
-}
-
-window.onclick = function(event) {
-  if (event.target == project) {
-    project.style.display = "none";
-  }
 }
