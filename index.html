@@ -37,7 +37,7 @@
 	<header id="header">
 
 			<!-- ============== navbar ======================= -->
-		<nav class="navbar fill navbar-expand-lg navbar-light bg-col navbar-inverse fixed-top">
+		<nav id="nav" class="navbar fill navbar-expand-lg navbar-light bg-col navbar-inverse fixed-top">
 
   <div class="name col-lg-4 col-md-4"><a class="navbar-brand" href="#"><img src="img/logo.jpg" class="logo-img"><span>AMJAD ASHFAQ</span></a></div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,13 +55,13 @@
         <a class="nav-link" href="#Portfolio">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
+        <span id="contact" class="nav-link">Contact</span>
       </li>
       
     </ul>
   </div>
-  <div class="mybtn col-lg-4">
-	  <button type="button" class="btn d-none d-lg-block">I need a website</button>
+  <div class="mybtn col-lg-2">
+	  <button id="project" type="button" class="btn d-none d-lg-block">I need a website</button>
   </div>
 </nav>
 	</header>
@@ -71,7 +71,7 @@
 				<div id="myIntro" class="">
 					<div class="me">
 						<h1>Hi! I'm Muhammad Amjad <br> Nice to meet you</h1>
-						<button class="button" type="button"><span>I need a website</span></button>
+						<button id="project2" class="button" type="button"><span>I need a website</span></button>
 					</div>
 					
 				</div>
@@ -280,10 +280,74 @@
 			<a href="#" class="link linkedin" target="_parent"><span class="fa fa-linkedin"></span></a>
 		</div>
 
-		<button class="message">Send a Message<span></span></button>
+		<button id="contact2" class="message">Send a Message<span></span></button>
 		<div class="hr"></div>
 		<p><small>Copyright &copy; 2020, Amjad Ashfaq. All rights reserved</small></p>
 	</footer>
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+		    <div class="closer">
+		    	<span id="reset" class="fa fa-undo"></span>
+		    	<span class="close">&times;</span>
+		    </div>
+		    <div class="form-wraper">
+		    	<h1 id="form-name">Send Message</h1>
+		    	<form id="form">
+		    		<div class="row">
+			    		<div class="col-lg-6 col-md-6 col-sm-12">
+			    			<h5 class="form-place">Name</h5><input type="name" name="name" placeholder="Your name...">
+			    		</div>
+			    		<div class="col-lg-6 col-md-6 col-sm-12">
+			    			<h5 class="form-place">Email</h5><input type="email" name="email" placeholder="Your email...">
+			    		</div>
+			    		<div  class="col-12">
+			    			<h5 class="form-place">Subject</h5>
+			    			<input type="subject" name="subject" placeholder="Subject..."  style="margin-right: 0px;">
+			    		</div>
+			    		<div class="col-12">
+			    			<h5 class="form-place">Message</h5><textarea placeholder="Message..."></textarea>
+			    		</div>	
+		    		</div>
+		    		
+		    		<div class="send"><button class="submit">Send<i class="fa fa-paper-plane" o></i></button></div>
+		    	</form>
+		    </div>
+		</div>
+	</div>
+
+	<div id="myProject" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+		    <div class="closer">
+		    	<span id="reseter" class="fa fa-undo"></span>
+		    	<span class="close closed">&times;</span>
+		    </div>
+		    <div class="form-wraper">
+		    	<h1 id="form-name">Send Project Details</h1>
+		    	<form id="form2">
+		    		<div class="row">
+			    		<div class="col-lg-6 col-md-6 col-sm-12">
+			    			<span class="form-place">Name</span><input type="name" name="name" placeholder="Your name...">
+			    		</div>
+			    		<div class="col-lg-6 col-md-6 col-sm-12">
+			    			<span class="form-place">Email</span><input type="email" name="email" placeholder="Your email...">
+			    		</div>
+			    		<div class="col-lg-6 col-md-6 col-sm-12">
+			    			<span class="form-place">Project</span><input type="subject" name="subject" placeholder="Subject...">
+			    		</div>
+			    		<div class="col-lg-6 col-md-6 col-sm-12">
+			    			<span class="form-place">Budget</span><input type="subject" name="subject" placeholder="Subject...">
+			    		</div>
+			    		<div class="col-12">
+			    			<span class="form-place">Project details</span><textarea placeholder="Project details..." style="width: 100%;"></textarea>
+			    		</div>
+			    	</div>
+		    		<div class="send"><button class="submit">Send<i class="fa fa-paper-plane" o></i></button></div>
+		    	</form>
+		    </div>
+		</div>
+	</div>
 </body>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

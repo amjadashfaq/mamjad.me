@@ -73,3 +73,84 @@ x.addListener(myFunction);		// call function on state change also
 
 
 /* ============================================================================== */
+
+
+/* ====================================== Showing contact message box ======================================== */
+
+// Get the contact
+var contact = document.getElementById("myModal");
+
+// Get the button that opens the conatct form
+var contactBtn = document.getElementById("contact");
+var contactBtn2 = document.getElementById("contact2");
+// Get the <span> element that closes the foem
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+contactBtn.onclick = function() {
+  document.getElementById("nav").style.zIndex = "-1";   //sending navbar backward
+  contact.style.display = "block";    //select name of heading (message, Discuss project etc)
+  document.body.style.position = "fixed";
+}
+
+contactBtn2.onclick = function() {
+  document.getElementById("nav").style.zIndex = "-1";   //sending navbar backward
+  contact.style.display = "block";    //select name of heading (message, Discuss project etc)
+  document.body.style.position = "fixed";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  document.getElementById("nav").style.zIndex = "1" ;   //bringing navbar forward on closing contact box
+  contact.style.display = "none";
+  document.body.style.position = '';
+}
+document.getElementById("reset").onclick= function () {
+    document.getElementById("form").reset();  //reseting form input fields removes all the entered data from input fields
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == contact) {
+    contact.style.display = "none";
+  }
+}
+
+
+/* =============================================== Contact box ends ======================================= */
+
+
+
+// Get the project
+var projectBtn = document.getElementById("project");
+var projectBtn2 = document.getElementById("project2");
+// Get the project form
+var project = document.getElementById("myProject");
+
+// Get the <span> element that closes the foem
+var spanP = document.getElementsByClassName("closed")[0];
+
+projectBtn.onclick = function() {
+  document.getElementById("nav").style.zIndex = "-1";   //sending navbar backward
+  project.style.display = "block";    //select name of heading (message, Discuss project etc)
+  document.body.style.position = "fixed";
+}
+projectBtn2.onclick = function() {
+  document.getElementById("nav").style.zIndex = "-1";   //sending navbar backward
+  project.style.display = "block";    //select name of heading (message, Discuss project etc)
+  document.body.style.position = "fixed";
+}
+spanP.onclick = function() {
+  document.getElementById("nav").style.zIndex = "1" ;   //bringing navbar forward on closing contact box
+  project.style.display = "none";
+  document.body.style.position = '';
+}
+
+document.getElementById("reseter").onclick= function () {
+    document.getElementById("form2").reset();  //reseting form input fields removes all the entered data from input fields
+}
+
+window.onclick = function(event) {
+  if (event.target == project) {
+    project.style.display = "none";
+  }
+}
