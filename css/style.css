@@ -1611,6 +1611,7 @@ footer p{
 		margin-bottom:20px;
 		font: 1.1em Arial , serif;
 		margin-top: 10px;
+		width: 100%;
 	}
 	.submit{
 		width: 40%;
@@ -1633,7 +1634,7 @@ footer p{
 	#form textarea, #form2 textarea{
 		padding: 10px;
 		height: 150px;
-		width: 90% !important;
+		width: 100%;
 	}	
 }
 
@@ -1654,6 +1655,7 @@ footer p{
 		margin-bottom:20px;
 		font: 0.9em Arial , serif;
 		margin-top: 10px;
+		width: 100%;
 	}
 	.submit{
 		width: 60%;
