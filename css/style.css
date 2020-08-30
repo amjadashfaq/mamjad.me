@@ -51,40 +51,10 @@ a{
 
 /* =========================================== */
 
-/*nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-}*/
-
 nav.fill ul li a {
   transition: all 2s;
 }
 
-/*nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
-}*/
-/*nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
-}*/
-/*nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}*/
 #contact,#contact2{
 	cursor: pointer;
 }
@@ -252,6 +222,7 @@ nav.fill ul li a {
 
 .myheader .row{
 	margin: 0px;
+	padding: 0px;
 }
 .myheader button{
   	outline: 0px transparent solid;
@@ -1468,7 +1439,6 @@ footer p{
 	font-size: 20px;
 	font-weight: bold;
 	border-radius: 25px;
-	transition: .1s ease;
 }
 .submit:hover{
 	background: linear-gradient(-30deg, #0019a3, #8000bf);
@@ -1596,7 +1566,7 @@ footer p{
 
 @media (min-width: 451px) and (max-width: 767px){
 	.fa-undo{
-		font-size: 20px;
+		font-size: 25px;
 		padding-top: 12px;
 		padding-right: 50px;
 	}
@@ -1640,7 +1610,7 @@ footer p{
 
 @media screen and (max-width: 450px) {
 	.fa-undo{
-		font-size: 20px;
+		font-size: 25px;
 		padding-top: 12px;
 		padding-right: 50px;
 	}
