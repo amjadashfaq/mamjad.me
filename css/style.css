@@ -2,6 +2,9 @@
 	box-sizing: border-box;
 	margin: 0px;
 }
+body{
+	position: relative;
+}
 ul{
 	padding: 0px;
 }
@@ -20,7 +23,7 @@ a{
 .navbar{
 	box-shadow: 0px 5px 10px #888888;
 	background: #fff;
-
+	transition: top 0.3s;
 }
 .name{
 	text-align: center;
@@ -41,19 +44,28 @@ a{
 }
 .nav-link{
 	font: 1.1em Arial, Helvetica, sans-serif;
-	color: black!important;
+	color: #8000bf !important;
 	font-weight: bold;
 }
+
+.nav-link:hover{
+	border-bottom: 5px #8000bf solid;
+}
+.active{
+	border-bottom: 5px #8000bf solid;	
+}
+
+
 /*.nav-link:hover{
 	color: #000df2!important;
 	border-bottom: 4px #8000ff solid;
 }*/
 
 /* =========================================== */
-
+/*
 nav.fill ul li a {
   transition: all 2s;
-}
+}*/
 
 #contact,#contact2{
 	cursor: pointer;
@@ -185,10 +197,6 @@ nav.fill ul li a {
 		outline: 0px solid transparent;
 	}
 }
-
-
-
-
 
 
 
@@ -396,7 +404,8 @@ nav.fill ul li a {
 /* =================================== About section ============================== */
 
 .heading{
-	margin: 100px 0px 0px 10%;
+	margin-left:10%;
+	padding-top: 140px;
 	font:3.8em Arial black, serif;
 	color: #0019a3;
 }
@@ -446,7 +455,8 @@ nav.fill ul li a {
 
 @media (min-width: 1192px) and (max-width: 1350px){
 	.heading{
-		margin: 100px 0px 0px 10%;
+		margin-left: 10%;
+		padding-top: 140px;
 		font:3.2em Arial black, serif;
 		color: #0019a3;
 	}
@@ -468,7 +478,8 @@ nav.fill ul li a {
 
 @media (min-width: 992px) and (max-width: 1191px) {
 	.heading{
-		margin: 100px 0px 0px 10%;
+		margin-left: 10%;
+		padding-top: 120px;
 		font:2.7em Arial black, serif;
 		color: #0019a3;
 	}
@@ -490,7 +501,8 @@ nav.fill ul li a {
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.heading{
-		margin: 60px 0px 0px 10%;
+		margin-left: 10%;
+		padding-top: 80px;
 		font:2em Arial black, serif;
 		color: #0019a3;
 	}
@@ -516,7 +528,8 @@ nav.fill ul li a {
 }
 @media (min-width: 448px) and (max-width: 767px) {
 	.heading{
-		margin: 60px 0px 0px 10%;
+		margin-left: 10%;
+		padding-top: 70px;
 		font:1.8em Arial black, serif;
 		color: #0019a3;
 	}
@@ -544,7 +557,8 @@ nav.fill ul li a {
 
 @media (max-width: 447px) {
 	.heading{
-		margin: 40px 0px 0px 10%;
+		margin-left: 10%;
+		padding-top: 70px;
 		font:2em Arial black, serif;
 		color: #0019a3;
 	}
@@ -1445,6 +1459,10 @@ footer p{
 }
 .submit i{
 	margin-left: 10px;
+}
+
+.status span{
+	color: #f00;
 }
 
 

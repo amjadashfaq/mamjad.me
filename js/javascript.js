@@ -1,3 +1,4 @@
+
 /* =============== Jumbotron layout for mobile settings ========================== */
 
 			/* ================================= for mobile layout ===============================*/
@@ -112,7 +113,7 @@ document.getElementById("reset").onclick= function () {
 
 /* =============================================== Contact box ends ======================================= */
 
-
+/* =============================================== Showing project box ======================================= */
 
 // Get the project
 var projectBtn = document.getElementById("project");
@@ -142,3 +143,28 @@ spanP.onclick = function() {
 document.getElementById("reseter").onclick= function () {
     document.getElementById("form2").reset();  //reseting form input fields removes all the entered data from input fields
 }
+
+
+/* =============================================== Project box ends ======================================= */
+
+
+
+  var navlinks = $('nav ul li a'),
+      navH = $('nav').height(),
+      section = $('section'),
+      documentEl = $(document);
+
+            console.log("navbar height: " + navH);
+
+      documentEl.on('scroll',function(){
+        var curScrPos = documentEl.scrollTop();
+
+        section.each(function(){
+            var self = $(this);
+            if(self.offset().top < (curScrPos + navH) && (curScrPos + navH) < (self.offset().top + self.outerheight() )) {
+                var targetClass = '.' + self.attr('class');
+                navlinks.removeClass('active');
+                $(targetClass).addClass('active');
+            }
+        });
+      });
