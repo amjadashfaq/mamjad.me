@@ -102,7 +102,7 @@ contactBtn2.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  document.getElementById("nav").style.zIndex = "1" ;   //bringing navbar forward on closing contact box
+  document.getElementById("nav").style.zIndex = "12" ;   //bringing navbar forward on closing contact box
   contact.style.display = "none";
   document.body.style.position = '';
 }
@@ -135,7 +135,7 @@ projectBtn2.onclick = function() {
   document.body.style.position = "fixed";
 }
 spanP.onclick = function() {
-  document.getElementById("nav").style.zIndex = "1" ;   //bringing navbar forward on closing contact box
+  document.getElementById("nav").style.zIndex = "12" ;   //bringing navbar forward on closing contact box
   project.style.display = "none";
   document.body.style.position = '';
 }
@@ -147,14 +147,12 @@ document.getElementById("reseter").onclick= function () {
 
 /* =============================================== Project box ends ======================================= */
 
-
+/* =================================== Scroll spy ================================================ */
 
   var navlinks = $('nav ul li a'),
       navH = $('nav').height(),
       section = $('section'),
       documentEl = $(document);
-
-            console.log("navbar height: " + navH);
 
       documentEl.on('scroll',function(){
         var curScrPos = documentEl.scrollTop();
@@ -168,3 +166,5 @@ document.getElementById("reseter").onclick= function () {
             }
         });
       });
+
+/* =================================== Scroll spy ends ================================================ */

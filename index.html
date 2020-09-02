@@ -13,12 +13,16 @@
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   	<link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
   
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -37,9 +41,11 @@
 	<header id="header">
 
 			<!-- ============== navbar ======================= -->
-		<nav id="nav" class="navbar fill navbar-expand-lg navbar-light bg-col navbar-inverse fixed-top">
+		<nav id="nav" class="navbar fill navbar-expand-lg navbar-light bg-col navbar-inverse fixed-top" data-aos="fade-down">
 
-  <div class="name col-lg-4 col-md-4"><a class="navbar-brand" href="#"><img src="img/logo.jpg" class="logo-img"><span>AMJAD ASHFAQ</span></a></div>
+  	<div class="name col-lg-4 col-md-4">
+		<a class="navbar-brand" href="#"><img src="img/logo.jpg" class="logo-img"><span>AMJAD ASHFAQ</span></a>
+	</div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -71,8 +77,8 @@
 			<div class="row">
 				<div id="myIntro" class="">
 					<div class="me">
-						<h1>Hi! I'm Muhammad Amjad <br> Nice to meet you</h1>
-						<button id="project2" class="button" type="button"><span>I need a website</span></button>
+						<h1 data-aos="fade-right" data-aos-delay="1000">Hi! I'm Muhammad Amjad <br> Nice to meet you</h1>
+						<button id="project2" data-aos="fade-up" data-aos-delay="1000" class="button" type="button"><span>I need a website</span></button>
 					</div>
 				</div>
 				<div id="img1" class=""></div>
@@ -82,16 +88,16 @@
 	</div>
 
 	<div id="about" class="about">
-		<h1 class="heading">About</h1>
-		<hr class="hr1">
+		<h1 data-aos="fade-down" class="heading">About</h1>
+		<hr class="hr1" data-aos="fade-left">
 		<br>
-		<hr class="hr2">
+		<hr class="hr2" data-aos="fade-right">
 		<div class="row">
 			<div id="left" class="col-6  d-none d-lg-block">
 				<img src="img/about1a.jpg">
 			</div>
 			<div id="right" class="">
-				<h1>Hi! I'm Muhammad Amjad</h1>
+				<h1  data-aos="zoom-in">Hi! I'm Muhammad Amjad</h1>
 				<p>I'm a student of BS Software Engineering in Punjab University College of Information Technology (PUCIT), University of the Punjab, Lahore, Pakistan. I’m a front-end web developer I love to convert your ideas to life in the browser. I build successful websites that are easy to use, and coded with the same eye for detail as a designer. Your ideas in the browser will be clean coded and and verified from w3c code verifier.</p>
 			</div>
 		</div>
@@ -99,22 +105,22 @@
 	</div>
 	<div id="services">
 		<div>
-			<ul class="title">
+			<ul class="title" data-aos="zoom-in">
 				<li><img src="img/services.png"></li>
 				<li><h1>What I do?</h1></li>
 			</ul>
 			<ul class="bars">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li data-aos="fade-right" data-aos-delay="500"></li>
+				<li data-aos="fade-right"></li>
+				<li data-aos="fade-left"></li>
+				<li data-aos="fade-left" data-aos-delay="500"></li>
 			</ul>
 		</div>
 		<div class="service-body">
 			<p>I'm a front end web developer. I prefer to keep learning, continue challenging myself, and do interesting things that matter. My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors. Now, I'm working on freelance market place to serve the companies, businesses and clients all over the world. I love to convert your innovative ideas to life in the browser that spreads your business to the internet world and make your websites responsive that looks impressive on diffrent devices and looks impressive and attractive through animation.</p>
 		</div>
 		<div id="tiles" class="row">
-			<div class="card-cover col-lg-4 col-md-6 col-xl-4 col-sm-12">
+			<div data-aos="flip-left" class="card-cover col-lg-4 col-md-6 col-xl-4 col-sm-12">
 		  		<div class="card">
 		  			<img class="card-img-top" src="img/code4.gif" alt="Card image cap">
 		  			<div class="card-body">
@@ -122,7 +128,7 @@
 		  			</div>
 		  		</div>
 			</div>
-			<div class="card-cover col-lg-4 col-md-6 col-xl-4 col-sm-12">
+			<div data-aos="flip-left" class="card-cover col-lg-4 col-md-6 col-xl-4 col-sm-12">
 		  		<div class="card">
 		  			<img class="card-img-top" src="img/responsive4.gif" alt="Card image cap">
 		  			<div class="card-body">
@@ -130,7 +136,7 @@
 		  			</div>
 		  		</div>
 			</div>
-			<div class="card-cover col-lg-4 col-md-6 col-sm-12">
+			<div data-aos="flip-left" class="card-cover col-lg-4 col-md-6 col-sm-12">
 		  		<div class="card">
 		  			<img class="card-img-top" src="img/animate.gif" alt="Card image cap">
 		  			<div class="card-body">
@@ -144,17 +150,17 @@
 	<div id="portfolio"  class="portfoilio">
 		<div>
 			<div class="title">
-				<h1>My Recent Work</h1>
+				<h1  data-aos="zoom-in">My Recent Work</h1>
 			</div>
 			<ul class="bars">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li data-aos="fade-right" data-aos-delay="500"></li>
+				<li data-aos="fade-right"></li>
+				<li data-aos="fade-left"></li>
+				<li data-aos="fade-left" data-aos-delay="500"></li>
 			</ul>
 		</div>
 		<div class="row work-showcase">
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div data-aos="fade-down-right" class="col-lg-4 col-md-6 col-sm-12">
 		  		<div class="wrap-container">
 			  		<div class="container">
 						<img class="image" src="img/hotel.jpg" alt="Avatar" class="image">
@@ -171,7 +177,7 @@
 				    </div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div data-aos="fade-down" class="col-lg-4 col-md-6 col-sm-12">
 		  		<div class="wrap-container">
 			  		<div class="container">
 						<img src="img/webDesign.jpg" alt="Avatar" class="image">
@@ -188,7 +194,7 @@
 				    </div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div data-aos="fade-down-left" class="col-lg-4 col-md-6 col-sm-12">
 		  		<div class="wrap-container">
 			  		<div class="container">
 						<img src="img/webDesign2.jpg" alt="Avatar" class="image">
@@ -205,7 +211,7 @@
 				    </div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div data-aos="fade-up-right" class="col-lg-4 col-md-6 col-sm-12">
 		  		<div class="wrap-container">
 			  		<div class="container">
 						<img src="img/lead.jpg" alt="Avatar" class="image">
@@ -222,7 +228,7 @@
 				    </div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div data-aos="fade-up" class="col-lg-4 col-md-6 col-sm-12">
 		  		<div class="wrap-container">
 			  		<div class="container">
 						<img src="img/school website.jpg" alt="Avatar" class="image">
@@ -239,7 +245,7 @@
 				    </div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12">
+			<div data-aos="fade-up-left" class="col-lg-4 col-md-6 col-sm-12">
 		  		<div class="wrap-container">
 			  		<div class="container">
 						<img src="img/paid.png" alt="Avatar" class="image">
@@ -266,7 +272,7 @@
 		<img src="img/footer-mobile.jpg" class="d-lg-none">		
 	</div>	
 	<footer id="footer">
-		<h2>Follow me</h2>
+		<h2 data-aos="zoom-in">Follow me</h2>
 		<div class="social d-none d-lg-block">
   			<a href="#" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
 			<a href="#" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
@@ -379,6 +385,12 @@
 		    </div>
 		</div>
 	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init({
+    		duration: 1500,
+    	});
+  	</script>
 </body>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
