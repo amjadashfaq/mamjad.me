@@ -34,6 +34,7 @@ a{
 .name span{
 	font: bold 200% Lora, serif;
 	margin-left: 5%;
+	color: #8000bf;
 }
 
 .navbar-nav{
@@ -792,6 +793,9 @@ nav ul li .nav-link:hover:after{
 	}
 	.bars li{
 		width: 7%;
+	}
+	.card-body{
+		margin-top: -20%;
 	}
 	.card-text{
 		font: 1.7em Arial, serif;
