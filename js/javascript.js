@@ -149,49 +149,22 @@ document.getElementById("reseter").onclick= function () {
 
 /* =================================== Scroll spy ================================================ */
 
-  // var navlinks = $('nav ul li a'),
-  //     navH = $('nav').height(),
-  //     section = $('section'),
-  //     documentEl = $(document);
+  var navlinks = $('nav ul li a'),
+      navH = $('nav').height(),
+      section = $('section'),
+      documentEl = $(document);
 
-  //     documentEl.on('scroll',function(){
-  //       var curScrPos = documentEl.scrollTop();
+      documentEl.on('scroll',function(){
+        var curScrPos = documentEl.scrollTop();
 
-  //       section.each(function(){
-  //           var self = $(this);
-  //           if(self.offset().top < (curScrPos + navH) && (curScrPos + navH) < (self.offset().top + self.outerheight() )) {
-  //               var targetClass = '.' + self.attr('class');
-  //               navlinks.removeClass('active');
-  //               $(targetClass).addClass('active');
-  //           }
-  //       });
-  //     });
-
-  $(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
-
-  // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        section.each(function(){
+            var self = $(this);
+            if(self.offset().top < (curScrPos + navH) && (curScrPos + navH) < (self.offset().top + self.outerheight() )) {
+                var targetClass = '.' + self.attr('class');
+                navlinks.removeClass('active');
+                $(targetClass).addClass('active');
+            }
+        });
       });
-    }  // End if
-  });
-});
 
 /* =================================== Scroll spy ends ================================================ */

@@ -65,7 +65,7 @@ nav ul li .nav-link:before{
 
 nav ul li .nav-link:after{
   position: absolute;
-  bottom: -4px;
+  bottom: -5px;
   left: 0;
   right: 0;
   margin: auto;
@@ -73,7 +73,7 @@ nav ul li .nav-link:after{
   content: '.';
   color: transparent;
   background: #8000bf;
-  height: 5px;
+  height: 4px;
 }
 .active{
 	border-bottom: 5px #8000bf solid;	
@@ -89,7 +89,7 @@ nav ul li .nav-link:hover:after{
 	color: #fff;
 	border-radius: 50px;
 	padding: auto;
-	margin-right: 30%;
+	margin-right: 15%;
 	width: 60%;
 	height: 50%;
 	font-size: 17px;
@@ -130,8 +130,8 @@ nav ul li .nav-link:hover:after{
 
 @media (min-width: 992px) and (max-width: 1191px) {
 	.navbar-brand img{
-	width: 60px;
-	height: 60px;
+		width: 60px;
+		height: 60px;
 	}
 
 	.name span{
@@ -142,6 +142,7 @@ nav ul li .nav-link:hover:after{
 	}
 	.btn{
 		font-size: 12px;
+		margin-right: 20%;
 	}
 }
 
@@ -185,19 +186,19 @@ nav ul li .nav-link:hover:after{
 
 @media (max-width: 447px) {
 	.name{
-		width: 80%;
+		width: 60%;
 		text-align: left;
 	}
 	.navbar-brand img{
-	width: 30px;
-	height: 30px;
+		width: 30px;
+		height: 30px;
 	}
 
 	.name span{
-	font: bold 80% Lora, serif;
+		font: bold 80% Lora, serif;
 	}
 	.nav-link{
-	font-size: 1em;
+		font-size: 1em;
 	}
 	.mybtn{
 		text-align: center;
@@ -415,6 +416,8 @@ nav ul li .nav-link:hover:after{
 	border: 3px #8000bf solid;
 	border-radius:5px;
 	margin-left: 16%;
+	height: 2px;
+	background: #8000bf
 }
 .hr2{
 	margin: -20px 0px 100px 13%;
@@ -510,6 +513,7 @@ nav ul li .nav-link:hover:after{
 	.hr1,.hr2{
 		margin-left: 18%;
 		width: 15%;
+
 	}
 	.hr2{
 		margin: -25px 0px 100px 13%;
@@ -1671,6 +1675,42 @@ footer p{
 		/* =========================== modal responsive code ends ========================= */
 /* =========================================== contact form ends =========================================== */
 
+/* ========================================================================================================= */
 
 
-/* ==================================================================================== */
+/* ===================================== Styling scroll bar =================================== */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF4500; 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA500; 
+}
+
+/* ===================================== Styling scroll bar ends =================================== */
+
+
+
+/* ================================================================================================= */
+
+
+/* ===================================== Style Sheet ends ========================================== */
+
+/* ************************************************************************************************* */
+
