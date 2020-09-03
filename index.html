@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<title>Amjad Developers</title>
+	<title>Amjad Ashfaq</title>
 
 	<meta content="Web developers portfolio, Amjad portfolio, Amjad developers, front end portfolio, web development and designing" name="descriptison">
   	<meta content="Amjad, developers, web development, web design, portfolio, website portfolio, front-end," name="keywords">
+
+  	<!-- Favicon img -->
+  	<link href="img/logo.jpg" rel="icon">
 
   	<!-- Bootstrap 4.5.0 -->
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -58,7 +61,7 @@
 			<!-- Website logo -->
 
 		  	<div class="name col-lg-4 col-md-4">
-				<a class="navbar-brand" href="#"><img src="img/logo.jpg" class="logo-img"><span>AMJAD ASHFAQ</span></a>
+				<a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="logo-img" class="logo-img"><span>AMJAD ASHFAQ</span></a>
 			</div>
 
 			<!-- ******************** -->
@@ -141,7 +144,7 @@
 			<!-- arrow image on left side -->
 			
 			<div id="left" class="col-6  d-none d-lg-block">
-				<img src="img/about1a.jpg">
+				<img src="img/about1a.jpg" alt="about-img">
 			</div>
 
 			<!-- ************************ -->
@@ -167,7 +170,7 @@
 			<!-- Services section heading and image -->
 
 			<ul class="title" data-aos="zoom-in">
-				<li><img src="img/services.png"></li>
+				<li><img src="img/services.png" alt="heading-image"></li>
 				<li><h1>What I do?</h1></li>
 			</ul>
 
@@ -265,7 +268,7 @@
 			<div data-aos="fade-up" class="col-lg-4 col-md-6 col-sm-12">
 		  		<div class="wrap-container">
 			  		<div class="container">
-						<img class="image" src="img/hotel.jpg" alt="Avatar" class="image">
+						<img class="image" src="img/hotel.jpg" alt="work-img">
 						
 						<!-- Overlay -->
 
@@ -398,7 +401,7 @@
 			<div data-aos="fade-up" class="col-lg-4 col-md-6 col-sm-12">
 		  		<div class="wrap-container">
 			  		<div class="container">
-						<img src="img/school website.jpg" alt="Avatar" class="image">
+						<img src="img/schoolWebsite.jpg" alt="Avatar" class="image">
 						
 						<!-- Overlay -->
 
@@ -473,8 +476,8 @@
 	<!-- Footer top img -->
 
 	<div class="ontop">
-		<img src="img/footer-top1.jpg" class="d-none d-lg-block">	
-		<img src="img/footer-mobile.jpg" class="d-lg-none">		
+		<img src="img/footer-top1.jpg" alt="Footer-top-desktop-img" class="d-none d-lg-block">	
+		<img src="img/footer-mobile.jpg" alt="footer-top-mobile-img" class="d-lg-none">		
 	</div>	
 
 	<!-- ************** -->
@@ -532,14 +535,14 @@
 		    <div class="form-wraper">
 
 		    	<!-- Form heading -->
-		    	<h1 id="form-name">Send Message</h1>
+		    	<h1 class="form-name">Send Message</h1>
 		    	
 		    	<!-- Form -->
 
-		    	<form id="form" method="post" action="">
+		    	<form id="form" method="post">
 		    		<div class="row">
 			    		<div class="col-lg-6 col-md-6 col-sm-12">
-			    			<h5 class="form-place">Name</h5><input type="name" name="name" placeholder="Your name...">
+			    			<h5 class="form-place">Name</h5><input type="text" name="name" placeholder="Your name...">
 			    		</div>
 			    		<div class="col-lg-6 col-md-6 col-sm-12">
 			    			<h5 class="form-place">Email</h5><input type="email" name="email" placeholder="Your email...">
@@ -547,7 +550,7 @@
 			    		
 			    		<div  class="col-12">
 			    			<h5 class="form-place">Subject</h5>
-			    			<input type="subject" name="subject" placeholder="Subject..."  style="margin-right: 0px;">
+			    			<input type="text" name="subject" placeholder="Subject..."  style="margin-right: 0px;">
 			    		</div>
 			    		<div class="col-12">
 			    			<h5 class="form-place">Message</h5><textarea name="message" placeholder="Message..."></textarea>
@@ -555,7 +558,7 @@
 		    		</div>
 		    		
 		    		<!-- Send button -->
-		    		<div class="send"><button name="submit" class="submit">Send<i class="fa fa-paper-plane" o></i></button></div>
+		    		<div class="send"><button name="submit" class="submit">Send<i class="fa fa-paper-plane"></i></button></div>
 		    	</form>
 
 		    	<!-- Form ends -->
@@ -566,29 +569,7 @@
 		    			
 		    		<!-- php code -->
 
-		    		<?php 
-		    			if(isset($_POST['submit']))
-		    			{
-		    				$user_name = $_POST['name'];
-		    				$user_email = $_POST['email'];
-		    				$user_subject = $_POST['subject'];
-		    				$user_message = $_POST['message'];
-
-		    				$email_from = "muhammadamjad3583@gmail.com";
-		    				$email_subject = $user_subject;
-		    				$email_body = "Name: $user_name.\n".
-		    							  "Email id: $user_email.\n".
-		    							  "User Message: $user_message.\n";
-
-		    				$to_email = "amjad.ashfaq999@gmail.com"
-		    				$headers = "From: $email_from \r\n";
-		    				$headers .= "Reply-To $user_email\r\n";
-
-							mail($to_mail,$email_subject,$email_body,$headers);
-							echo "Message sent Successfully";			    			
-		    			}
-
-		    		?>
+		
 
 		    		<!-- php code ends -->
 
@@ -620,23 +601,23 @@
 		    <!-- *********************** -->
 
 		    <div class="form-wraper">
-   			    <h1 id="form-name">Send Project Details</h1>
+   			    <h1 class="form-name">Send Project Details</h1>
 		    	
    			    <!-- From -->
 
 		    	<form id="form2">
 		    		<div class="row">
 			    		<div class="col-lg-6 col-md-6 col-sm-12">
-			    			<span class="form-place">Name</span><input type="name" name="name" placeholder="Your name...">
+			    			<span class="form-place">Name</span><input type="text" name="name" placeholder="Your name...">
 			    		</div>
 			    		<div class="col-lg-6 col-md-6 col-sm-12">
 			    			<span class="form-place">Email</span><input type="email" name="email" placeholder="Your email...">
 			    		</div>
 			    		<div class="col-lg-6 col-md-6 col-sm-12">
-			    			<span class="form-place">Project</span><input type="subject" name="Project name" placeholder="Project name...">
+			    			<span class="form-place">Project</span><input type="text" name="Project name" placeholder="Project name...">
 			    		</div>
 			    		<div class="col-lg-6 col-md-6 col-sm-12">
-			    			<span class="form-place">Budget</span><input type="subject" name="Budget" placeholder="Budget...">
+			    			<span class="form-place">Budget</span><input type="text" name="Budget" placeholder="Budget...">
 			    		</div>
 			    		<div class="col-12">
 			    			<span class="form-place">Project details</span><textarea placeholder="Project details..." style="width: 100%;"></textarea>
@@ -644,7 +625,7 @@
 			    	</div>
 
 		    		<!-- Send button -->
-		    		<div class="send"><button class="submit">Send<i class="fa fa-paper-plane" o></i></button></div>
+		    		<div class="send"><button class="submit">Send<i class="fa fa-paper-plane"></i></button></div>
 		    	</form>
 
 		    	<!-- Form ends -->
@@ -672,7 +653,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!-- My Java Script file -->
-    <script type="text/javascript" src="js/javascript.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
 
