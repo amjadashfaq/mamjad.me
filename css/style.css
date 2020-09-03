@@ -1677,7 +1677,7 @@ footer p{
 }
 
 		/* =========================== modal responsive code ends ========================= */
-		
+
 /* =========================================== contact form ends =========================================== */
 
 /* ========================================================================================================= */
@@ -1700,13 +1700,18 @@ footer p{
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FF4500; 
+  background: #ff9900; 
   border-radius: 8px;
+}
+
+::-webkit-scrollbar-track-piece{
+	background: #ffcc80;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFA500; 
+  background: #cc9900; 
+  border-radius: 0px;
 }
 
 /* ===================================== Styling scroll bar ends =================================== */
